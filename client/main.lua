@@ -42,7 +42,7 @@ CreateThread(function()
                                 icon = 'fa-solid fa-car',
                                 disabled = playerJob.grade.level < minGrade,
                                 onSelect = function()
-                                    local vehicleId, errorResult = lib.callback.await('trt_policegarage:server:spawnVehicle', false, model, garage.spawn)
+                                    local vehicleId, errorResult = lib.callback.await('trt_jobvehicles:server:spawnVehicle', false, model, garage.spawn)
 
                                     if not vehicleId then
                                         lib.print.error(errorResult)
@@ -55,12 +55,12 @@ CreateThread(function()
                         end
 
                         lib.registerContext({
-                            id = ('trt_policegarage_vehicles_menu_%d'):format(index),
+                            id = ('trt_jobvehicles_vehicles_menu_%d'):format(index),
                             title = locale('context_title', jobInfo.label),
                             options = options
                         })
 
-                        lib.showContext(('trt_policegarage_vehicles_menu_%d'):format(index))
+                        lib.showContext(('trt_jobvehicles_vehicles_menu_%d'):format(index))
                     end
                 end
             end,

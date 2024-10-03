@@ -5,7 +5,7 @@ if config.versionCheck then lib.versionCheck('t0r3tto/trt_jobvehicles') end
 
 utils.checkDependencies()
 
-lib.callback.register('trt_policegarage:server:spawnVehicle', function(source, model, coords)
+lib.callback.register('trt_jobvehicles:server:spawnVehicle', function(source, model, coords)
     local netId = qbx.spawnVehicle({
         model = model,
         spawnSource = coords,
