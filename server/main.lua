@@ -1,7 +1,7 @@
 local config = require 'config.server'
 local utils = require 'server.utils'
 
-if config.versionCheck then lib.versionCheck('t0r3tto/trt_policegarage') end
+if config.versionCheck then lib.versionCheck('t0r3tto/trt_jobvehicles') end
 
 utils.checkDependencies()
 

@@ -25,7 +25,6 @@ local Vehicles <const> = {
 --- Garages array with specific job configuration
 --- @type GarageConfig[]
 return {
-    versionCheck = true,
     garages = {
         {
             job = 'police',
