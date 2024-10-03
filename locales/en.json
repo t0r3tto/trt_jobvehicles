@@ -1,0 +1,9 @@
+{
+    "context_title": "%s Vehicles",
+    "vehicle_spawned": "Sucessfully assigned %s to yourself",
+    "min_grade": "Sucessfully assigned %s to yourself",
+    "option_description": "Min Grade: %s (%d)",
+    "invalid_vehicle": "Invalid Vehicle",
+    "invalid_grade": "Invalid Grade",
+    "textui_key": "[E] - Open %s Garage"
+}
