@@ -6,7 +6,7 @@ if config.versionCheck then lib.versionCheck('t0r3tto/trt_jobvehicles') end
 utils.checkDependencies()
 
 lib.callback.register('trt_jobvehicles:server:spawnVehicle', function(source, model, coords)
-    local netId = qbx.spawnVehicle({
+    local _, vehicle = qbx.spawnVehicle({
         model = model,
         spawnSource = coords,
         warp = config.warp and GetPlayerPed(source)
@@ -18,8 +18,6 @@ lib.callback.register('trt_jobvehicles:server:spawnVehicle', function(source, mo
         citizenid = citizenid
     })
 
-    local plate = qbx.getVehiclePlate(NetworkGetEntityFromNetworkId(netId))
-    exports.qbx_vehiclekeys:GiveKeys(source, plate)
-
+    exports.qbx_vehiclekeys:GiveKeys(source, vehicle)
     return vehicleId, errorResult
 end)
