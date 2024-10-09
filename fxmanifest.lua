@@ -7,7 +7,7 @@ name 'trt_jobvehicles'
 author 't0r3tto'
 description 'Job & grade based vehicle obtention'
 repository 'https://github.com/t0r3tto/trt_jobvehicles'
-version '1.0.0'
+version '1.0.1'
 
 shared_scripts {
 	'@ox_lib/init.lua',
